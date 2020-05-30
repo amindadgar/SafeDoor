@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/ViewPager"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/navigationBar"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_square"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/item_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorPrimary"
+            app:bt_colorInactive="@color/colorPrimaryDark"
+            app:bt_icon="@android:drawable/ic_menu_help"
+            app:bt_shape="@drawable/square"
+            app:bt_title="Home"
+
+            app:bt_padding="12dp"
+            app:bt_titlePadding="8dp" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/item_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorPrimary"
+            app:bt_colorInactive="@color/colorPrimaryDark"
+            app:bt_icon="@android:drawable/ic_menu_help"
+            app:bt_shape="@drawable/square"
+            app:bt_title="arduino"
+            app:bt_padding="12dp"
+            app:bt_titlePadding="8dp" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/item_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorPrimary"
+            app:bt_colorInactive="@color/colorPrimaryDark"
+            app:bt_icon="@android:drawable/ic_menu_help"
+            app:bt_shape="@drawable/square"
+            app:bt_title="unknown"
+            app:bt_padding="12dp"
+            app:bt_titlePadding="8dp" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+</androidx.constraintlayout.widget.ConstraintLayout>
